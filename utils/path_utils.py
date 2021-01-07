@@ -15,7 +15,7 @@ def get_home_dir():
     return str(Path().home())
 
 
-def get_parent_dir(path):
+def get_parent(path):
     return str(Path(path).parent)
 
 
@@ -45,10 +45,10 @@ def get_path_with_suffix(path, suffix):
     return str(Path(path).with_suffix(suffix))
 
 
-def get_name_with_suffix(path, suffix=None):
-    if suffix is None:
+def get_name(path, new_suffix=None):
+    if new_suffix is None:
         return Path(path).name
-    return Path(path).with_suffix(suffix).name
+    return Path(path).with_suffix(new_suffix).name
 
 
 def get_stem(path):

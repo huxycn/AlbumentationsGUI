@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-import path_utils as path
+from utils import path_utils as path
 
 from cv2 import *
 

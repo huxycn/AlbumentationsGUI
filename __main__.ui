@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1951</width>
+    <height>1219</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="raw_img_area" native="true">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>100</y>
+      <width>611</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: gray</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_img_path">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>10</y>
+      <width>75</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>图像位置：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>920</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>增强次数</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spn_aug_cnt">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>920</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_open_img">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>700</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择图像文件</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_start_aug">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>890</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始增强</string>
+    </property>
+   </widget>
+   <widget class="QToolBox" name="toolBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>291</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_flip">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>291</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string>翻转-Flip</string>
+     </attribute>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>71</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Flip</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>191</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>HorizontalFlip</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>191</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>VerticalFlip</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_crop">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>291</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string>裁剪-Crop</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="page_dropout">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>291</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string>丢弃-Dropout</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="aug_img_area" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>30</y>
+      <width>521</width>
+      <height>1081</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: gray</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_img_path_2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>50</y>
+      <width>75</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>标注位置：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_open_ann">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>740</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择标注文件</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_img_path">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>700</y>
+      <width>451</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_ann_path">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>740</y>
+      <width>431</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_load">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>800</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>加载</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1951</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

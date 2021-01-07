@@ -1,5 +1,4 @@
-import sys
-import cv2_utils as cv2
+from utils import cv2_utils as cv2
 from PyQt5 import Qt
 
 
